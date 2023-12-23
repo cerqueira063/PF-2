@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;   
+    background-image: linear-gradient(45deg,  #7b1a1a, #c13131);
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background: linear-gradient(45deg,  #0e0e0e, #2b2b2b);
+    width: 100%;
+    padding: 10px;
+
+}
+
+.Logo, .sociais{
+    width: 25%;
+}
+
+.Logo img{
+    width: 250px;
+    cursor: pointer;
+}
+
+.menu {
+    width: 50% ;
+}
+
+.menu nav a{
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu nav a ::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg,  #ff2500, #ff7100);
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: 0,5s;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+}
+.sociais  button{
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg,  #ff2500, #ff7100);
+    border: none;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sociais button i{
+    font-size: 30px;
+    color: #ffff;
+}
+
+.catalogo{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.main-footer .Logo{
+    width: 250;
+    height: 250;
+    padding-bottom: 50px;
+}
